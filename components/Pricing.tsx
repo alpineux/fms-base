@@ -78,16 +78,14 @@ export default function Pricing({
         <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
           <div className="sm:flex sm:flex-col sm:align-center"></div>
           <p className="text-4xl font-extrabold text-black sm:text-center sm:text-6xl">
-            No subscription pricing plans found. Create them in your{' '}
+            install{` `}
             <a
               className="text-pink-500 underline"
-              href="https://dashboard.stripe.com/products"
+              href="/admin/install"
               rel="noopener noreferrer"
-              target="_blank"
             >
-              Stripe Dashboard
+              fms
             </a>
-            .
           </p>
         </div>
       </section>
@@ -156,7 +154,6 @@ export default function Pricing({
               })}
             </div>
           </div>
-          <LogoCloud />
         </div>
       </section>
     );
@@ -254,7 +251,6 @@ export default function Pricing({
             );
           })}
         </div>
-        <LogoCloud />
       </div>
     </section>
   );

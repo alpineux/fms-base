@@ -21,17 +21,29 @@ export default async function Navbar() {
         <div className="relative flex flex-row justify-between py-4 align-center md:py-6">
           <div className="flex items-center flex-1">
             <Link href="/" className={s.logo}>
-              FMS
+              fms
             </Link>
             <nav className="hidden ml-6 space-x-2 lg:block">
-              <Link href="/" className={s.link}>
-                pricing
-              </Link>
-              {user && (
-                <Link href="/account" className={s.link}>
-                  account
-                </Link>
-              )}
+              
+              {!user ?
+                <>
+                  <Link href="/" className={s.link}>
+                    pricing
+                  </Link>
+                </>
+              :
+                <>
+                  <Link href="/account" className={s.link}>
+                    account
+                  </Link>
+                  <Link href="/account" className={s.link}>
+                    premium
+                  </Link>
+                  <Link href="/admin" className={s.link}>
+                    admin
+                  </Link>
+                </>
+              }
             </nav>
           </div>
           <div className="flex justify-end flex-1 space-x-8">
