@@ -9,7 +9,7 @@
 }
 
 *:focus {
-  @apply outline-none ring-2 ring-pink-500 ring-opacity-50;
+  @apply outline-none ring-2 ring-black ring-opacity-50;
 }
 
 html {
@@ -21,11 +21,7 @@ html {
 
 html,
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
-    'Helvetica', sans-serif;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  @apply text-white bg-zinc-800 antialiased;
+  @apply text-black bg-white antialiased;
 }
 
 body {
@@ -34,9 +30,6 @@ body {
   margin: 0;
 }
 
-a {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 
 .animated {
   -webkit-animation-duration: 1s;
